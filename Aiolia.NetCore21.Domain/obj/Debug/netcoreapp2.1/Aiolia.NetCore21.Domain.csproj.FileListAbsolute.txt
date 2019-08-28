@@ -1,9 +1,0 @@
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.deps.json
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.dll
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.pdb
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.csprojAssemblyReference.cache
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.csproj.CoreCompileInputs.cache
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.AssemblyInfoInputs.cache
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.AssemblyInfo.cs
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.dll
-c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Domain\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.pdb

@@ -261,4 +261,6 @@ __pycache__/
 *.pyc
 
 # My rule
-# **/bin/Debug
+**/bin/Debug
+**/obj/Debug
+*.suo
