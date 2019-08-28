@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aiolia.NetCore21.Domain\Aiolia.NetCore21.Domain.csproj" />
+    <ProjectReference Include="..\Aiolia.NetCore21.Repository\Aiolia.NetCore21.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

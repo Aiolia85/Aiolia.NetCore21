@@ -1,0 +1,12 @@
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.dll
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.csprojAssemblyReference.cache
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.csproj.CoreCompileInputs.cache
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.AssemblyInfoInputs.cache
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.AssemblyInfo.cs
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.deps.json
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.dll
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.pdb
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.pdb
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.csproj.CopyComplete
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.dll
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.pdb

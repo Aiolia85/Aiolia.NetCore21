@@ -1,0 +1,14 @@
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.dll
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.dll
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.csproj.CoreCompileInputs.cache
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.AssemblyInfoInputs.cache
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.AssemblyInfo.cs
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.csprojAssemblyReference.cache
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.deps.json
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.dll
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.pdb
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Domain.pdb
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\bin\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.pdb
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.csproj.CopyComplete
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.dll
+c:\myProject\Aiolia.NetCore21\Aiolia.NetCore21.Repository.EFRepository\obj\Debug\netcoreapp2.1\Aiolia.NetCore21.Repository.EFRepository.pdb
