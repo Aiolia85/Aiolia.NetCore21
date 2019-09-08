@@ -1,15 +1,20 @@
-<template>
-<input />
+﻿<template>
+    <input class="form-control" />
 </template>
 
 <script>
-import $ from 'jquery'
-import 'jquery-ui/ui/widgets/datapicker'
+    import $ from 'jquery'
+    import '@/assets/lib/jquery-ui/jquery-ui.min.css'
+    import '@/assets/lib/jquery-ui/jquery-ui.min.js'
 
-export default {
+    export default {
         mounted: function () {
-        $(this.$el).datapicker();
+            $(this.$el).datepicker();
+        },
+        beforeDestory: function () {
+            $(this.$el).datepicker("hide").datepicker("destory");
+        }
+
     }
-}
 </script>
 

@@ -1,6 +1,9 @@
 <template>
     <div id="app">
-        <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"></header>
+        <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"><div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+</div></header>
         <div class="container-fluid">
             <div class="row flex-xl-nowrap">
                 <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
