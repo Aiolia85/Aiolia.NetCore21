@@ -3,7 +3,7 @@
         <table class="jexcel" cellpadding="0" cellspacing="0" unselectable="yes" style="width:600px;">
             <thead>
                 <tr>
-                    <td v-for="h in Header" :key="h">{{h}}</td>
+                    <td v-for="h in Header" :key="h.name" v-bind:class="{'selected':h.selected}">{{h.name}}</td>
                 </tr>
             </thead>
             <tbody>
@@ -56,6 +56,7 @@
                 this.resetSelection();
                 row[0].highlightleft = true;
                 for (let i = 0; i < row.length; i++) {
+                    this.Header[i+1].selected = true;
                     row[i].highlighttop = true;
                     row[i].highlightbottom = true;
                     this.$set(this.CalData[row[i].cordY - 1], row[i].cordX - 1, row[i]);
@@ -63,7 +64,12 @@
                 }
                 
             },
-            resetSelection:function () {
+            resetSelection: function () {
+
+                for (let i = 0; i < this.Header.length; i++) {
+                    this.Header[i].selected = false;
+                }
+
                 for (let i = 0; i < this.highlighted.length; i++) {
                     this.highlighted[i].selected = false;
                     this.highlighted[i].highlightselected = false;
@@ -73,9 +79,13 @@
                     this.highlighted[i].highlightleft = false;
                     this.highlighted[i].highlightright = false;
                 }
+
+                this.highlighted = new Array();
             },
             selectCell: function (col) {
+
                 this.resetSelection();
+
                 col.selected = true;
                 col.highlightselected = true;
                 col.highlight = true;
@@ -83,7 +93,11 @@
                 col.highlightbottom = true;
                 col.highlightleft = true;
                 col.highlightright = true;
+
+                this.Header[col.cordX].selected = true;
+
                 this.$set(this.CalData[col.cordY - 1], col.cordX - 1, col);
+
                 this.highlighted.push(col);
             },
             transferData: function () {
@@ -125,9 +139,9 @@
                 }
 
                 this.Header = [];
-                this.Header.push("");
+                this.Header.push({});
                 for (let i = 0; i < maxX+1; i++) {
-                    this.Header.push(getColumnName(i));
+                    this.Header.push({ name: getColumnName(i) });
                 }
 
                 for (let i = 0; i < _this.CalData.length; i++) {
