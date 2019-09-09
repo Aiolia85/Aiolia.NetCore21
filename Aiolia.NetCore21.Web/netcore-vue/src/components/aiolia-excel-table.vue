@@ -8,8 +8,8 @@
             </thead>
             <tbody>
                 <tr v-for="(row,idx) in CalData" :key="row.cordY">
-                    <td class="jexcel_row">{{idx+1}}</td>
-                    <td v-for="col in row" :key="col.cordX" v-bind:class="{'highlight-selected':col.selected, 'highlight':col.selected, 'highlight-top':col.selected, 'highlight-bottom':col.selected, 'highlight-left':col.selected, 'highlight-right':col.selected }" v-on:click="selectCell(col)">{{col.ValDisp}}</td>
+                    <td class="jexcel_row" v-on:click="selectRow(row)">{{idx+1}}</td>
+                    <td v-for="col in row" :key="col.cordX" v-bind:class="{'highlight-selected':col.highlightselected, 'highlight':col.highlight, 'highlight-top':col.highlighttop, 'highlight-bottom':col.highlightbottom, 'highlight-left':col.highlightleft, 'highlight-right':col.highlightright }" v-on:click="selectCell(col)">{{col.ValDisp}}</td>
                 </tr>
             </tbody>
         </table>
@@ -38,6 +38,7 @@
             return {
                 CalData: [],
                 Header: [],
+                highlighted:[]
                 //cells: [{ cordX: 1, cordY: 1, ValDisp: "1" }, { cordX: 2, cordY: 2, ValDisp: "2" }, { cordX: 3, cordY: 3, ValDisp: "3" }, { cordX: 5, cordY: 5, ValDisp: "5" }]
             }
         },
@@ -51,12 +52,42 @@
 
         },
         methods: {
+            selectRow: function (row) {
+                this.resetSelection();
+                row[0].highlightleft = true;
+                for (let i = 0; i < row.length; i++) {
+                    row[i].highlighttop = true;
+                    row[i].highlightbottom = true;
+                    this.$set(this.CalData[row[i].cordY - 1], row[i].cordX - 1, row[i]);
+                    this.highlighted.push(row[i]);
+                }
+                
+            },
+            resetSelection:function () {
+                for (let i = 0; i < this.highlighted.length; i++) {
+                    this.highlighted[i].selected = false;
+                    this.highlighted[i].highlightselected = false;
+                    this.highlighted[i].highlight = false;
+                    this.highlighted[i].highlighttop = false;
+                    this.highlighted[i].highlightbottom = false;
+                    this.highlighted[i].highlightleft = false;
+                    this.highlighted[i].highlightright = false;
+                }
+            },
             selectCell: function (col) {
-                console.log(col);
+                this.resetSelection();
                 col.selected = true;
+                col.highlightselected = true;
+                col.highlight = true;
+                col.highlighttop = true;
+                col.highlightbottom = true;
+                col.highlightleft = true;
+                col.highlightright = true;
+                this.$set(this.CalData[col.cordY - 1], col.cordX - 1, col);
+                this.highlighted.push(col);
             },
             transferData: function () {
-                let cells = [{ cordX: 1, cordY: 1, ValDisp: "1", JClass: "" }, { cordX: 2, cordY: 2, ValDisp: "2", JClass: "" }, { cordX: 3, cordY: 3, ValDisp: "3", JClass: "" }, { cordX: 5, cordY: 5, ValDisp: "5", JClass: "" }];
+                let cells = [{ cordX: 1, cordY: 1, ValDisp: "1", JClass: "", selected: false }, { cordX: 2, cordY: 2, ValDisp: "2", JClass: "", selected: false }, { cordX: 3, cordY: 3, ValDisp: "3", JClass: "", selected: false }, { cordX: 5, cordY: 5, ValDisp: "5", JClass: "", selected: false}];
 
                 let _this = this;
                 console.log(cells);
