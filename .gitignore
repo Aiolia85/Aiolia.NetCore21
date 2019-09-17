@@ -264,3 +264,4 @@ __pycache__/
 **/bin/Debug
 **/obj/Debug
 *.suo
+**/node_modules
