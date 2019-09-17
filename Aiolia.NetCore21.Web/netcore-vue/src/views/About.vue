@@ -7,7 +7,7 @@
         <div class="row">
             <div class="row">
                 <aiolia-form-group label="推送项目" id="pushprojectname">
-                    <aiolia-form-datepicker></aiolia-form-datepicker>
+                    <aiolia-form-datepicker v-bind:options="options"></aiolia-form-datepicker>
                 </aiolia-form-group>
 
                 <aiolia-form-group label="推送项目" id="testid">
@@ -39,7 +39,8 @@ export default {
     name: 'about',
     data: function () {
             return {
-                abc: [{ cordX: 1, cordY: 1, ValDisp: "1" }, { cordX: 2, cordY: 2, ValDisp: "2" }, { cordX: 3, cordY: 3, ValDisp: "3" }, { cordX: 5, cordY: 5, ValDisp: "5" }]
+                abc: [{ cordX: 1, cordY: 1, ValDisp: "1" }, { cordX: 2, cordY: 2, ValDisp: "2" }, { cordX: 3, cordY: 3, ValDisp: "3" }, { cordX: 5, cordY: 5, ValDisp: "5" }],
+                options: { closeText: "hahaha", minDate: new Date(2018, 1 - 1, 1)}
             }
     },
     components: {
