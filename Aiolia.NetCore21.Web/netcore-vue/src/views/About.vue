@@ -23,7 +23,7 @@
             </div>
         </div>
             <div class="row" style="width:100%">
-                <aiolia-excel-table>
+                <aiolia-excel-table :cells="excelcells">
 
                 </aiolia-excel-table>
             </div>
@@ -40,7 +40,9 @@ export default {
     data: function () {
             return {
                 abc: [{ cordX: 1, cordY: 1, ValDisp: "1" }, { cordX: 2, cordY: 2, ValDisp: "2" }, { cordX: 3, cordY: 3, ValDisp: "3" }, { cordX: 5, cordY: 5, ValDisp: "5" }],
-                options: { closeText: "hahaha", minDate: new Date(2018, 1 - 1, 1)}
+                options: { closeText: "hahaha", minDate: new Date(2018, 1 - 1, 1) },
+                excelcells: [{ cordX: 1, cordY: 1, ValDisp: "1", JClass: "", selected: false }, { cordX: 2, cordY: 2, ValDisp: "2", JClass: "", selected: false }, { cordX: 3, cordY: 3, ValDisp: "3", JClass: "", selected: false }, { cordX: 5, cordY: 5, ValDisp: "5", JClass: "", selected: false }]
+
             }
     },
     components: {

@@ -31,15 +31,14 @@
     }
 
     export default {
-        props: {
-
-        },
+        props: [
+            "cells"
+        ],
         data: function () {
             return {
                 CalData: [],
                 Header: [],
                 highlighted:[]
-                //cells: [{ cordX: 1, cordY: 1, ValDisp: "1" }, { cordX: 2, cordY: 2, ValDisp: "2" }, { cordX: 3, cordY: 3, ValDisp: "3" }, { cordX: 5, cordY: 5, ValDisp: "5" }]
             }
         },
         beforeCreate: function () {
@@ -101,11 +100,11 @@
                 this.highlighted.push(col);
             },
             transferData: function () {
-                let cells = [{ cordX: 1, cordY: 1, ValDisp: "1", JClass: "", selected: false }, { cordX: 2, cordY: 2, ValDisp: "2", JClass: "", selected: false }, { cordX: 3, cordY: 3, ValDisp: "3", JClass: "", selected: false }, { cordX: 5, cordY: 5, ValDisp: "5", JClass: "", selected: false}];
 
                 let _this = this;
                 console.log(cells);
                 _this.Caldata = [];
+                let cells = _this.cells;
 
                 let maxX = 0;
                 let maxY = 0;
