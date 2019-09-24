@@ -9,7 +9,7 @@
             <tbody>
                 <tr v-for="(row,idx) in CalData" :key="row.cordY">
                     <td class="jexcel_row" v-on:click="selectRow(row)">{{idx+1}}</td>
-                    <td v-for="col in row" :key="col.cordX" v-bind:class="{'highlight-selected':col.highlightselected, 'highlight':col.highlight, 'highlight-top':col.highlighttop, 'highlight-bottom':col.highlightbottom, 'highlight-left':col.highlightleft, 'highlight-right':col.highlightright }" v-on:click="selectCell(col)">{{col.ValDisp}}</td>
+                    <td v-for="col in row" v-on:mousedown="mousedown(col)" v-on:mouseover="mouseover(col)" v-on:mouseup="mouseup" :key="col.cordX" v-bind:class="cell.SysClass" v-on:click="selectCell(col)">{{col.ValDisp}}</td>
                 </tr>
             </tbody>
         </table>
@@ -29,6 +29,17 @@
 
         return letter;
     }
+
+    var cellClass = function () {
+        this.'highlight-selected': col.highlightselected,
+            'highlight': col.highlight,
+            'highlight-top': col.highlighttop,
+            'highlight-bottom': col.highlightbottom,
+            'highlight-left': col.highlightleft,
+                'highlight-right': col.highlightright
+    }
+    }
+
 
     export default {
         props: [
@@ -51,6 +62,9 @@
 
         },
         methods: {
+            mousedown: function (cell) {
+                console.log(cell);
+            },
             selectRow: function (row) {
                 this.resetSelection();
                 row[0].highlightleft = true;
